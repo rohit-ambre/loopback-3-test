@@ -1,0 +1,32 @@
+{
+  "_meta": {
+    "sources": [
+      "loopback/common/models",
+      "loopback/server/models",
+      "../common/models",
+      "./models"
+    ],
+    "mixins": [
+      "loopback/common/mixins",
+      "loopback/server/mixins",
+      "../common/mixins",
+      "./mixins"
+    ]
+  },
+  "Mobile": {
+    "dataSource": "mysqld",
+    "public": true
+  },
+  "Brand": {
+    "dataSource": "mysqld",
+    "public": true
+  },
+  "New": {
+    "dataSource": "mysqld",
+    "public": true
+  },
+  "location": {
+    "dataSource": "mysqld",
+    "public": true
+  }
+}
