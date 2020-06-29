@@ -1,10 +1,10 @@
 {
   "mysqld": {
-    "host": "192.168.0.106",
-    "port": 3336,
+    "host": "127.0.0.1",
+    "port": 3306,
     "url": "",
-    "database": "loop3",
-    "password": "Diamonds@1989",
+    "database": "loop3_test",
+    "password": "password",
     "name": "mysqld",
     "user": "root",
     "connector": "mysql"

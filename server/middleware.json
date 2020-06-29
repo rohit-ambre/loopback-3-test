@@ -3,6 +3,7 @@
     "loopback#favicon": {}
   },
   "initial": {
+    "./middleware/initial": {},
     "compression": {},
     "helmet#xssFilter": {},
     "helmet#frameguard": {
@@ -32,7 +33,12 @@
   },
   "session": {},
   "auth": {},
-  "parse": {},
+  "parse": {
+    "./middleware/parse": {}
+  },
+  "parse:after": {
+    "./middleware/parse_after":{}
+  },
   "routes": {
     "loopback#rest": {
       "paths": [
@@ -42,9 +48,11 @@
   },
   "files": {},
   "final": {
+    "./middleware/final": {},
     "loopback#urlNotFound": {}
   },
   "final:after": {
+    "./middleware/final_after": {},
     "strong-error-handler": {}
   }
 }
