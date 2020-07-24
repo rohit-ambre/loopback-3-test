@@ -1,7 +1,7 @@
 'use strict';
 const Agenda = require('agenda');
 
-const connectionString = 'mongodb+srv://rohit:Redhat123@fcc-2bhxb.mongodb.net/auth?';
+const connectionString = 'mongodb//rohit:password@localhost/DB';
 
 module.exports = function(server) {
   const agenda = new Agenda({
@@ -15,7 +15,7 @@ module.exports = function(server) {
   jobTypes.forEach(type => {
     // the type name should match the file name in the jobs_list folder
     console.log('foreach');
-    require('../jobs/' + type)(agenda);
+    require('../jobs/' + type)(agenda, server);
   });
 
   if (jobTypes.length) {
