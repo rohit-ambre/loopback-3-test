@@ -1,7 +1,8 @@
 'use strict';
 const Agenda = require('agenda');
+const ds = require('../datasources.json');
 
-const connectionString = 'mongodb//rohit:password@localhost/DB';
+const connectionString = ds.mongo.url;
 
 module.exports = function(server) {
   const agenda = new Agenda({
